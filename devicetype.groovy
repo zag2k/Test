@@ -73,7 +73,7 @@ def humidityHandler(evt) {
 		def alreadySentSms1 = recentEvents.count { Double.parseDouble(it.value.replace("%", "")) >= humidityHigh1 } > 1
 
 		if (alreadySentSms1) {
-			log.debug "Notification already sent within the last $deltaMinutes minutes"
+			log.debug "Notification already sent within the last $deltaMinutes miasdasdasdasdnutes"
 
 		} else {
          	if (state.lastStatus != "off") {
